@@ -8,6 +8,11 @@ box-sizing: border-box;
 
 html{
     overflow-x: hidden;
+    scroll-behavior: unset !important; /* Disable default smooth scrolling in Bootstrap */
+}
+
+body{
+    background-color: #ffe9c7;
 }
 
 /* Banner Start */
@@ -42,11 +47,16 @@ html{
 
 
 /* Banner Slider Start */
+.banner-slider-outer{
+    padding: 5rem 0;
+}
 .banner-slider{
-    height: 100vh;
+    height: 85vh;
     width: 100%;
     overflow: hidden;
     position: relative;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .banner-slider .list .item{
     width: 100%;
@@ -61,20 +71,18 @@ html{
 }
 .banner-slider .list .item .content{
     position: absolute;
-    top: calc(35% - 100px);
-    width: 1200px;
-    max-width: 100%;
-    left: 44%;
-    transform: translateX(-50%);
-    padding-right: 20%;
+    top: calc(16.5% - 100px);
+    width: 100%;
+    left: 0;
     box-sizing: border-box;
     color: #fff;
     text-shadow: 0 5px 10px #0004;
 }
 .banner-slider .list .item .content .title,
 .banner-slider .list .item .content .type{
-    font-size: calc(2rem + 1.7vw);
+    font-size: calc(1rem + 1.7vw);
     font-weight: bold;
+    text-align: center;
     line-height: 1.3em;
     /* color: #3f1516; */
     color: #fff;
@@ -90,15 +98,15 @@ html{
 /* Thumbnail Section  */
 .banner-slider .thumbnail{
     position: absolute;
-    top: calc(50% - 80px);
-    left: 67%;
+    top: calc(83.5% - 80px);
+    left: 59.5%;
     width: max-content;
     z-index: 100;
     display: flex;
     gap: 20px;
 }
 .banner-slider .thumbnail .item{
-    width: 150px;
+    width: 160px;
     height: 160px;
     flex-shrink: 0;
     position: relative;
@@ -113,8 +121,8 @@ html{
 /* nextPrevArrows Section  */
 .banner-slider .nextPrevArrows{
     position: absolute;
-    top: calc(73% - 20px);
-    right: calc(23% - 150px);
+    top: calc(64% - 20px);
+    right: calc(-3.5% - 150px);
     z-index: 100;
     width: 300px;
     max-width: 30%;
@@ -306,3 +314,90 @@ html{
     }
 }
 /* Banner Slider End */
+
+/* Our Mission Start */
+.our-mission{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0 5rem 0;
+}
+.our-mission .mission-left{
+    width: 40%;
+}
+.our-mission .mission-left img{
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 8px;
+}
+.our-mission .mission-right{
+    width: 55%;
+}
+.our-mission .mission-right h2{
+    margin: 0;
+    font-size: calc(1.6rem + 1vw);
+}
+.our-mission .mission-right p{
+    margin-top: 1.5rem;
+    font-size: calc(0.53rem + 1vw);
+}
+/* Our Mission End */
+
+/* Founder Start */
+.founder{
+    padding: 0 0 5rem 0;
+    overflow: hidden;
+}
+.founder-imgBox{
+    position: relative;
+}
+.founder-imgBox .img-layer{
+    width: 100%;
+    height: 30rem;
+    background-color: #ebc894;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+.founder-imgBox img{
+    border-radius: 10px;
+    width: 60%;
+    margin: 5rem 20% 3rem 20%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.founder-text h2{
+    margin: 0;
+    font-size: calc(1.6rem + 1vw);
+    margin-bottom: 1.5rem;
+}
+.founder-text p{
+    font-size: calc(0.45rem + 1vw);
+}
+/* Founder End */
+
+/* Connecting World Start */
+.connecting-world{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0 5rem 0;
+}
+.connecting-world-left{
+    display: flex;
+    width: 30%;
+}
+.connecting-world-left img{
+    width: 100%;
+    border-radius: 10px;
+}
+.connecting-world-right {
+    width: 65%;
+}
+.connecting-world-right h2{
+    margin: 0;
+    font-size: calc(1.6rem + 1vw);
+}
+.connecting-world-right p{
+    font-size: calc(0.53rem + 1vw);
+    margin-top: 2rem;
+}
+/* Connecting World End */
