@@ -21,7 +21,15 @@ html{
 
 body{
     background-color: #ffe9c7;
+}
+
+h1, h2, h3, h4, h5, h6{
     font-family: 'John Mayer', sans-serif;
+}
+p{
+    font-family: "Poppins", serif;
+    font-size: calc(0.7em + 0.5vw) !important;
+    font-weight: 300;
 }
 
 /* Banner Start */
@@ -347,7 +355,6 @@ body{
 }
 .our-mission .mission-right p{
     margin-top: 1.5rem;
-    font-size: calc(0.53rem + 1vw);
 }
 /* Our Mission End */
 
@@ -379,9 +386,6 @@ body{
     font-size: calc(1.6rem + 1vw);
     margin-bottom: 1.5rem;
 }
-.founder-text p{
-    font-size: calc(0.45rem + 1vw);
-}
 /* Founder End */
 
 /* Connecting World Start */
@@ -407,7 +411,166 @@ body{
     font-size: calc(1.6rem + 1vw);
 }
 .connecting-world-right p{
-    font-size: calc(0.53rem + 1vw);
     margin-top: 1.5rem;
 }
 /* Connecting World End */
+
+/* Why Elysium Start */
+.why-elysium{
+    padding: 0 0 4rem 0;
+}
+.why-elysium h2{
+    font-size: calc(1.6rem + 1vw);
+}
+.why-elysium .card-row-outer{
+    position: relative;
+    border: 4px solid #ebc894;
+    margin-top: 2.5rem;
+}
+.why-elysium .rounded-card-row{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 1rem;
+}
+.why-elysium .rounded-card-row .rounded-card-outer{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+.why-elysium .rounded-card-row .rounded-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 19rem;
+    height: 19rem;
+    border-radius: 50%;
+    border: 4px solid #ebc894;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+}
+.why-elysium .rounded-card-row .rounded-card h3{
+    font-size: calc(0.7rem + 1vw);
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+.why-elysium .rounded-card-row .rounded-card-layer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    border-radius: 50%;
+    padding: 2rem 1rem;
+    background-color: #ecc894;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+.why-elysium .rounded-card-row .rounded-card-layer:hover{
+    opacity: 1;
+}
+.why-elysium .rounded-card-row .rounded-card-layer p{
+    font-size: calc(0.05em + 1vw) !important;
+    text-align: center;
+    color: #fff;
+}
+
+.why-elysium .box{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+}
+.why-elysium .top-left-box{
+    border-right: 4px solid #ebc894;
+    border-bottom: 4px solid #ebc894;
+    top: -20px;
+    left: -20px;
+}
+.why-elysium .top-right-box{
+    border-left: 4px solid #ebc894;
+    border-bottom: 4px solid #ebc894;
+    top: -20px;
+    right: -20px;
+}
+.why-elysium .bottom-left-box{
+    border-top: 4px solid #ebc894;
+    border-right: 4px solid #ebc894;
+    bottom: -20px;
+    left: -20px;
+}
+.why-elysium .bottom-right-box{
+    border-top: 4px solid #ebc894;
+    border-left: 4px solid #ebc894;
+    bottom: -20px;
+    right: -20px;
+}
+/* Why Elysium End */
+
+/* Offerings Start */
+.offerings{
+    padding: 1rem 0 4rem 0;
+}
+.offerings h2{
+    font-size: calc(1.6rem + 1vw);
+}
+/* .offerings-row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 2.5rem;
+}
+.offerings-row .offer-card{
+    width: 19%;
+    margin-bottom: 1.2rem;
+    border-radius: 10px;
+}
+.offerings-row .offer-card img{
+    width: 100%;
+    border-radius: 10px;
+}
+.offerings-row .offer-card h5{
+    font-size: calc(1.2rem + 1vw);
+    font-weight: 600;
+}
+.offerings-row .offer-card p{
+    font-size: calc(0.3rem + 1vw) !important;
+    margin-top: 2rem;
+}
+#offer-card-2,
+#offer-card-4,
+#offer-card-6,
+#offer-card-8,
+#offer-card-10{
+    border: 3px solid #ebc894;
+    padding: 2rem;
+} */
+.offerings-card-row{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2.5rem;
+} 
+.offerings-card-row .offer-card{
+    width: 18.5%;
+} 
+.offerings-card-row .offer-card img{
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: #ebc894 0px 3px 8px;
+} 
+.offerings-card-row .offer-card .card-desc{
+    border: 3px solid #ebc894;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    box-shadow: #ebc894 0px 3px 8px;
+} 
+.offerings-card-row .offer-card .card-desc h5{
+    font-size: calc(1.2rem + 1vw);
+    font-weight: 600;
+} 
+.offerings-card-row .offer-card .card-desc p{
+    font-size: calc(0.25rem + 1vw) !important;
+} 
+/* Offerings End */

@@ -52,3 +52,21 @@ function moveSlider(direction) {
 
 // --------------------------------------------------------------------------------------------------------------------------------
 
+
+document.addEventListener('DOMContentLoaded', () => {
+    const cards = document.querySelectorAll('.why-elysium .rounded-card-row .rounded-card');
+
+    cards.forEach(card => {
+        card.addEventListener('mousemove', (e) => {
+            const rect = card.getBoundingClientRect();
+            const x = e.clientX - rect.left - rect.width / 2;
+            const y = e.clientY - rect.top - rect.height / 2;
+
+            card.style.transform = `translate(${x * 0.3}px, ${y * 0.3}px)`;
+        });
+
+        card.addEventListener('mouseleave', () => {
+            card.style.transform = 'translate(0, 0)';
+        });
+    });
+});
