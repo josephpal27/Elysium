@@ -6,6 +6,14 @@ box-sizing: border-box;
 /* font-family: "Jost", serif; */
 }
 
+@font-face {
+    font-family: 'John Mayer';
+    src: url('../fonts/John Mayer.ttf') format('truetype'),
+         url('../fonts/John Mayer.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 html{
     overflow-x: hidden;
     scroll-behavior: unset !important; /* Disable default smooth scrolling in Bootstrap */
@@ -13,6 +21,7 @@ html{
 
 body{
     background-color: #ffe9c7;
+    font-family: 'John Mayer', sans-serif;
 }
 
 /* Banner Start */
@@ -388,6 +397,7 @@ body{
 .connecting-world-left img{
     width: 100%;
     border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 2px 5px 8px;
 }
 .connecting-world-right {
     width: 65%;
@@ -398,6 +408,6 @@ body{
 }
 .connecting-world-right p{
     font-size: calc(0.53rem + 1vw);
-    margin-top: 2rem;
+    margin-top: 1.5rem;
 }
 /* Connecting World End */
