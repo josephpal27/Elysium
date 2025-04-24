@@ -196,6 +196,7 @@ p{
 .banner-slider .list .item:nth-child(1) .content .buttons{
     animation-delay: 1s !important;
 }
+
 /* Animation for next button click */
 .banner-slider.next .list .item:nth-child(1) img{
     width: 150px;
